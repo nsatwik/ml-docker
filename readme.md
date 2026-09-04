@@ -4,6 +4,7 @@
 **Install packages**
 ```bash
 apt update
+apt install docker.io -y
 apt install -y python3-venv
 python3 -m venv venv
 source venv/bin/activate
