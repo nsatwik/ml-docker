@@ -38,3 +38,7 @@ curl -X POST http://localhost:8000/predict \
   "employment_years": 6
 }'
 ```
+
+**Step3**
+
+**Dockerize & push to ECR**
