@@ -1,5 +1,7 @@
 ### Steps 
 **Step 1**
+
+**Install packages**
 ```bash
 apt update
 apt install -y python3-venv
@@ -12,6 +14,7 @@ python train.py
 ```
 
 **Step2**
+
 **Run the FastAPI application**
 ```bash
 pip install fastapi uvicorn
