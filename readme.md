@@ -43,3 +43,20 @@ curl -X POST http://localhost:8000/predict \
 **Step3**
 
 **Dockerize & push to ECR**
+
+```bash
+docker build --no-cache -t loan-approval-api .
+```
+
+```bash
+docker run -d   --name loan-api   -p 8000:8000   loan-approval-api
+```
+
+```bash
+docker logs loan-api
+```
+
+**In new terminal**
+```bash
+curl http://localhost:8000/health
+```
