@@ -6,11 +6,21 @@
 apt update
 apt install docker.io -y
 apt install -y python3-venv
+```
+
+**Create virtual env**
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+**Then install**
+```bash
 python -m pip install --upgrade pip
 pip install pandas scikit-learn joblib
 pip list
+```
+**Train the model**
+```bash
 python train.py
 ```
 
