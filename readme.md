@@ -62,6 +62,32 @@ docker build --no-cache -t loan-approval-api .
 docker run -d   --name loan-api   -p 8000:8000   loan-approval-api
 ```
 
+**If any error**
+```bash
+sudo ss -ltnp | grep 8000
+```
+
+or 
+
+```bash
+sudo lsof -i :8000
+```
+
+then 
+```bash
+pkill -f uvicorn
+```
+
+next 
+```bash
+docker rm loan-api
+```
+
+again 
+```bash
+docker run -d   --name loan-api   -p 8000:8000   loan-approval-api
+```
+
 ```bash
 docker logs loan-api
 ```
